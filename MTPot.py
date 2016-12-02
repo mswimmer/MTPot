@@ -170,8 +170,8 @@ def main():
     except MissingConfigField:
         honey_logger.info("Syslog reporting disabled, to enable it add its configuration to the configuration file")
     COMMANDS = config.commands
-    server = gevent.server.StreamServer((config.ip, config.port), MyTelnetHandler.streamserver_handle)
-    honey_logger.info("Listening on %d...", config.port)
+    server = gevent.server.StreamServer((config.ip, 23), MyTelnetHandler.streamserver_handle)
+    honey_logger.info("Listening on %d...", 23)
     server.serve_forever()
 
 if __name__ == '__main__':

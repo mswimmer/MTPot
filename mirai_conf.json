@@ -1,5 +1,4 @@
 {
-    "port": 23,
     "ddos_name": "Mirai",
     "ip": "0.0.0.0",
     "commands": {

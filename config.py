@@ -11,7 +11,7 @@
 ###
 import json
 
-MANDATORY_FIELDS = ["port", "commands", "ddos_name", "ip"]
+MANDATORY_FIELDS = ["commands", "ddos_name", "ip"]
 OPTIONAL_FIELDS = ["syslog_address", "syslog_port", "syslog_protocol"]
 
 class InvalidConfiguration(Exception):
